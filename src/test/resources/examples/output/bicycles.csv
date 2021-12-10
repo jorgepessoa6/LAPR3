@@ -1,0 +1,4 @@
+#lines starting with # should be ignored
+#Column description
+#bike description - a descriptive reference for the bicycle e.g. PT050
+bicycle description;

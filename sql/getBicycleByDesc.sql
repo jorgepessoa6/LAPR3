@@ -1,0 +1,10 @@
+CREATE OR REPLACE FUNCTION getBicycleByDesc ( 
+        p_desc BICYCLE.VEHICLE_DESC%TYPE)
+        
+        return SYS_REFCURSOR
+AS
+    my_cursor SYS_REFCURSOR;
+BEGIN
+    OPEN my_cursor FOR SELECT * FROM BICYCLE WHERE p_desc = VEHICLE_DESC;
+    RETURN MY_CURSOR;
+END;
